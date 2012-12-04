@@ -27,8 +27,8 @@ MATHLIBS = @MATHLIBS@
 
 libexec_PROGRAMS = check_apt check_cluster check_disk check_dummy check_http check_load \
 	check_mrtg check_mrtgtraf check_ntp check_ntp_peer check_nwstat check_overcr check_ping \
-	check_real check_smtp check_ssh check_tcp check_time check_ntp_time \
-	check_ups check_users negate \
+	check_real check_smtp  check_tcp check_time check_ntp_time \
+	check_ups check_users negate check_ssh \
 	urlize @EXTRAS@
 
 check_tcp_programs = check_ftp check_imap check_nntp check_pop \
@@ -37,7 +37,7 @@ check_tcp_programs = check_ftp check_imap check_nntp check_pop \
 EXTRA_PROGRAMS = check_mysql check_radius check_pgsql check_snmp check_hpjd \
 	check_swap check_fping check_ldap check_game check_dig \
 	check_nagios check_by_ssh check_dns check_nt check_ide_smart	\
-	check_procs check_mysql_query check_apt check_dbi
+	check_procs check_mysql_query check_apt check_dbi 
 
 EXTRA_DIST = t tests utils.c netutils.c sslutils.c popen.c utils.h netutils.h \
 	popen.h common.h runcmd.c runcmd.h
@@ -96,7 +96,7 @@ check_radius_LDADD = $(NETLIBS) $(RADIUSLIBS)
 check_real_LDADD = $(NETLIBS)
 check_snmp_LDADD = $(BASEOBJS)
 check_smtp_LDADD = $(SSLOBJS) $(NETLIBS) $(SSLLIBS)
-check_ssh_LDADD = $(NETLIBS)
+check_ssh_LDADD = $(NETLIBS) $(SSHLIB)
 check_swap_LDADD = $(MATHLIBS) $(BASEOBJS) popen.o
 check_tcp_LDADD = $(SSLOBJS) $(NETLIBS) $(SSLLIBS)
 check_time_LDADD = $(NETLIBS)
@@ -139,7 +139,7 @@ check_radius_DEPENDENCIES = check_radius.c $(NETOBJS)  $(DEPLIBS)
 check_real_DEPENDENCIES = check_real.c $(NETOBJS) $(DEPLIBS)
 check_snmp_DEPENDENCIES = check_snmp.c $(BASEOBJS) $(DEPLIBS)
 check_smtp_DEPENDENCIES = check_smtp.c $(SSLOBJS) $(NETOBJS) $(DEPLIBS)
-check_ssh_DEPENDENCIES = check_ssh.c $(NETOBJS) $(DEPLIBS)
+check_ssh_DEPENDENCIES = check_ssh.c $(NETOBJS) $(DEPLIBS) 
 check_swap_DEPENDENCIES = check_swap.c $(BASEOBJS) popen.o $(DEPLIBS)
 check_tcp_DEPENDENCIES = check_tcp.c $(SSLOBJS) $(NETOBJS) $(DEPLIBS)
 check_time_DEPENDENCIES = check_time.c $(NETOBJS) $(DEPLIBS)
