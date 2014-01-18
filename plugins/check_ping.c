@@ -1,9 +1,9 @@
 /*****************************************************************************
 * 
-* Nagios check_ping plugin
+* Monitoring check_ping plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2007 Nagios Plugins Development Team
+* Copyright (c) 2000-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -30,7 +30,7 @@
 
 const char *progname = "check_ping";
 const char *copyright = "2000-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "monitoringplug-devel@lists.sourceforge.net";
 
 #include "common.h"
 #include "netutils.h"
@@ -555,7 +555,7 @@ print_help (void)
 {
 	print_revision (progname, NP_VERSION);
 
-	printf ("Copyright (c) 1999 Ethan Galstad <nagios@nagios.org>\n");
+	printf ("Copyright (c) 1999 Ethan Galstad <monitoring@monitoring.org>\n");
 	printf (COPYRIGHT, copyright, email);
 
 	printf (_("Use ping to check connection statistics for a remote host."));
@@ -592,7 +592,7 @@ print_help (void)
 	printf ("%s\n", _("This plugin uses the ping command to probe the specified host for packet loss"));
   printf ("%s\n", _("(percentage) and round trip average (milliseconds). It can produce HTML output"));
   printf ("%s\n", _("linking to a traceroute CGI contributed by Ian Cass. The CGI can be found in"));
-  printf ("%s\n", _("the contrib area of the downloads section at http://www.nagios.org/"));
+  printf ("%s\n", _("the contrib area of the downloads section at http://www.monitoring.org/"));
 
 	printf (UT_SUPPORT);
 }

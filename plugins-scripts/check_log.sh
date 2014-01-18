@@ -1,7 +1,7 @@
 #!/bin/sh
 #
-# Log file pattern detector plugin for Nagios
-# Written by Ethan Galstad (nagios@nagios.org)
+# Log file pattern detector plugin for Monitoring
+# Written by Ethan Galstad (monitoring@monitoring.org)
 # Last Modified: 07-31-1999
 #
 # Usage: ./check_log <log_file> <old_log_file> <pattern>
@@ -30,11 +30,11 @@
 # If you use this plugin make sure to keep the following in mind:
 #
 #    1.  The "max_attempts" value for the service should be 1, as this
-#        will prevent Nagios from retrying the service check (the
+#        will prevent Monitoring from retrying the service check (the
 #        next time the check is run it will not produce the same results).
 #
 #    2.  The "notify_recovery" value for the service should be 0, so that
-#        Nagios does not notify you of "recoveries" for the check.  Since
+#        Monitoring does not notify you of "recoveries" for the check.  Since
 #        pattern matches in the log file will only be reported once and not
 #        the next time, there will always be "recoveries" for the service, even
 #        though recoveries really don't apply to this type of check.
@@ -85,7 +85,7 @@ print_help() {
     echo ""
     print_usage
     echo ""
-    echo "Log file pattern detector plugin for Nagios"
+    echo "Log file pattern detector plugin for Monitoring"
     echo ""
     support
 }

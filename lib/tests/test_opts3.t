@@ -20,7 +20,7 @@ my @TESTS = (
 	[3, '.', 'check_missing', 'arg1', '--extra-opts=@./config-opts.ini', '--arg3', 'val2'],
 	[3, '.', 'check_missing', 'arg1', '--extra-opts', '--arg3', 'val2'],
 	[0, '/tmp:/var:/nonexistent:.', 'check_tcp', 'arg1', '--extra-opts', '--arg3', 'val2'],
-	[0, '/usr/local/nagios/etc:.:/etc', 'check_missing', 'arg1', '--extra-opts=check_tcp', '--arg3', 'val2'],
+	[0, '/usr/local/monitoring/etc:.:/etc', 'check_missing', 'arg1', '--extra-opts=check_tcp', '--arg3', 'val2'],
 );
 
 plan tests => scalar(@TESTS);

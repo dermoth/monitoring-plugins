@@ -1,9 +1,9 @@
 /*****************************************************************************
 * 
-* Nagios check_dummy plugin
+* Monitoring check_dummy plugin
 * 
 * License: GPL
-* Copyright (c) 1999-2007 Nagios Plugins Development Team
+* Copyright (c) 1999-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -30,7 +30,7 @@
 
 const char *progname = "check_dummy";
 const char *copyright = "1999-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "monitoringplug-devel@lists.sourceforge.net";
 
 #include "common.h"
 #include "utils.h"
@@ -98,7 +98,7 @@ print_help (void)
 {
   print_revision (progname, NP_VERSION);
 
-  printf ("Copyright (c) 1999 Ethan Galstad <nagios@nagios.org>\n");
+  printf ("Copyright (c) 1999 Ethan Galstad <monitoring@monitoring.org>\n");
   printf (COPYRIGHT, copyright, email);
 
   printf ("%s\n", _("This plugin will simply return the state corresponding to the numeric value"));

@@ -1,9 +1,9 @@
 /*****************************************************************************
 * 
-* Nagios check_nwstat plugin
+* Monitoring check_nwstat plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2007 Nagios Plugins Development Team
+* Copyright (c) 2000-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -31,7 +31,7 @@
 
 const char *progname = "check_nwstat";
 const char *copyright = "2000-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "monitoringplug-devel@lists.sourceforge.net";
 
 #include "common.h"
 #include "netutils.h"
@@ -1595,7 +1595,7 @@ void print_help(void)
 
 	print_revision (progname, NP_VERSION);
 
-	printf ("Copyright (c) 1999 Ethan Galstad <nagios@nagios.org>\n");
+	printf ("Copyright (c) 1999 Ethan Galstad <monitoring@monitoring.org>\n");
 	printf (COPYRIGHT, copyright, email);
 
 	printf ("%s\n", _("This plugin attempts to contact the MRTGEXT NLM running on a"));

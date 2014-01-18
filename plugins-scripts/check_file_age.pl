@@ -1,6 +1,6 @@
 #!/bin/perl -w
 
-# check_file_age.pl Copyright (C) 2003 Steven Grimm <koreth-nagios@midwinter.com>
+# check_file_age.pl Copyright (C) 2003 Steven Grimm <koreth-monitoring@midwinter.com>
 #
 # Checks a file's size and modification time to make sure it's not empty
 # and that it's sufficiently recent.
@@ -17,7 +17,7 @@
 # GNU General Public License for more details.
 #
 # you should have received a copy of the GNU General Public License
-# along with this program (or with Nagios);  if not, write to the
+# along with this program (or with Monitoring);  if not, write to the
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA
 

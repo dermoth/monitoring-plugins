@@ -1,13 +1,13 @@
 /*****************************************************************************
 * 
-* Nagios check_ide_smart plugin
+* Monitoring check_ide_smart plugin
 * ide-smart 1.3 - IDE S.M.A.R.T. checking tool
 * 
 * License: GPL
 * Copyright (C) 1998-1999 Ragnar Hojland Espinosa <ragnar@lightside.dhis.org>
 *               1998      Gadi Oxman <gadio@netvision.net.il>
 * Copyright (c) 2000 Robert Dale <rdale@digital-mission.com>
-* Copyright (c) 2000-2007 Nagios Plugins Development Team
+* Copyright (c) 2000-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -35,7 +35,7 @@
 
 const char *progname = "check_ide_smart";
 const char *copyright = "1998-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "monitoringplug-devel@lists.sourceforge.net";
 	
 #include "common.h"
 #include "utils.h"
@@ -167,7 +167,7 @@ enum SmartCommand
 char *get_offline_text (int);
 int smart_read_values (int, values_t *);
 int values_not_passed (values_t *, thresholds_t *);
-int nagios (values_t *, thresholds_t *);
+int monitoring (values_t *, thresholds_t *);
 void print_value (value_t *, threshold_t *);
 void print_values (values_t *, thresholds_t *);
 int smart_cmd_simple (int, enum SmartCommand, __u8, char);
@@ -191,7 +191,7 @@ main (int argc, char *argv[])
 		{"quiet-check", no_argument, 0, 'q'}, 
 		{"auto-on", no_argument, 0, '1'}, 
 		{"auto-off", no_argument, 0, '0'}, 
-		{"nagios", no_argument, 0, 'n'}, 
+		{"monitoring", no_argument, 0, 'n'}, 
 		{"help", no_argument, 0, 'h'}, 
 		{"version", no_argument, 0, 'V'},
 		{0, 0, 0, 0}
@@ -280,7 +280,7 @@ main (int argc, char *argv[])
 	case 4:
 		smart_read_values (fd, &values);
 		smart_read_thresholds (fd, &thresholds);
-		retval = nagios (&values, &thresholds);
+		retval = monitoring (&values, &thresholds);
 		break;
 	default:
 		smart_read_values (fd, &values);
@@ -384,7 +384,7 @@ values_not_passed (values_t * p, thresholds_t * t)
 
 
 int
-nagios (values_t * p, thresholds_t * t) 
+monitoring (values_t * p, thresholds_t * t) 
 {
 	value_t * value = p->values;
 	threshold_t * threshold = t->thresholds;
@@ -592,7 +592,7 @@ print_help (void)
 {
 	print_revision (progname, NP_VERSION);
 
-	printf ("Nagios feature - 1999 Robert Dale <rdale@digital-mission.com>\n");
+	printf ("Monitoring feature - 1999 Robert Dale <rdale@digital-mission.com>\n");
 	printf ("(C) 1999 Ragnar Hojland Espinosa <ragnar@lightside.dhis.org>\n");
 	printf (COPYRIGHT, copyright, email);
 
@@ -616,15 +616,15 @@ print_help (void)
   printf ("    %s\n", _("Turn on automatic offline tests"));
   printf (" %s\n", "-0, --auto-off");
   printf ("    %s\n", _("Turn off automatic offline tests"));
-  printf (" %s\n", "-n, --nagios");
-  printf ("    %s\n", _("Output suitable for Nagios"));
+  printf (" %s\n", "-n, --monitoring");
+  printf ("    %s\n", _("Output suitable for Monitoring"));
 
   printf (UT_SUPPORT);
 }
 
  /* todo : add to the long nanual as example
  *
- *     Run with:  check_ide-smart --nagios [-d] <DRIVE>
+ *     Run with:  check_ide-smart --monitoring [-d] <DRIVE>
  *     Where DRIVE is an IDE drive, ie. /dev/hda, /dev/hdb, /dev/hdc
  *
  *       - Returns 0 on no errors
@@ -639,5 +639,5 @@ print_usage (void)
 {
   printf ("%s\n", _("Usage:"));
   printf ("%s [-d <device>] [-i <immediate>] [-q quiet] [-1 <auto-on>]",progname);
-  printf (" [-O <auto-off>] [-n <nagios>]\n");
+  printf (" [-O <auto-off>] [-n <monitoring>]\n");
 }

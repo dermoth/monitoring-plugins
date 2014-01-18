@@ -1,10 +1,10 @@
 /*****************************************************************************
 * 
-* Nagios check_dhcp plugin
+* Monitoring check_dhcp plugin
 * 
 * License: GPL
-* Copyright (c) 2001-2004 Ethan Galstad (nagios@nagios.org)
-* Copyright (c) 2001-2007 Nagios Plugin Development Team
+* Copyright (c) 2001-2004 Ethan Galstad (monitoring@monitoring.org)
+* Copyright (c) 2001-2007 Monitoring Plugin Development Team
 * 
 * Description:
 * 
@@ -35,7 +35,7 @@
 
 const char *progname = "check_dhcp";
 const char *copyright = "2001-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "monitoringplug-devel@lists.sourceforge.net";
 
 #include "common.h"
 #include "netutils.h"
@@ -1384,7 +1384,7 @@ void print_help(void){
 
 	print_revision(progname, NP_VERSION);
 
-	printf("Copyright (c) 2001-2004 Ethan Galstad (nagios@nagios.org)\n");
+	printf("Copyright (c) 2001-2004 Ethan Galstad (monitoring@monitoring.org)\n");
 	printf (COPYRIGHT, copyright, email);
 
 	printf("%s\n", _("This plugin tests the availability of DHCP servers on a network."));

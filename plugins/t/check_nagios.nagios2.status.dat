@@ -13,7 +13,7 @@ info {
 program {
 	modified_host_attributes=0
 	modified_service_attributes=0
-	nagios_pid=2750
+	monitoring_pid=2750
 	daemon_mode=1
 	program_start=1133537167
 	last_command_check=1133537297

@@ -1,9 +1,9 @@
 /*****************************************************************************
 * 
-* Nagios check_dns plugin
+* Monitoring check_dns plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2008 Nagios Plugins Development Team
+* Copyright (c) 2000-2008 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -31,7 +31,7 @@
 
 const char *progname = "check_dns";
 const char *copyright = "2000-2008";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "monitoringplug-devel@lists.sourceforge.net";
 
 #include "common.h"
 #include "utils.h"
@@ -444,7 +444,7 @@ print_help (void)
 {
   print_revision (progname, NP_VERSION);
 
-  printf ("Copyright (c) 1999 Ethan Galstad <nagios@nagios.org>\n");
+  printf ("Copyright (c) 1999 Ethan Galstad <monitoring@monitoring.org>\n");
   printf (COPYRIGHT, copyright, email);
 
   printf ("%s\n", _("This plugin uses the nslookup program to obtain the IP address for the given host/domain query."));
