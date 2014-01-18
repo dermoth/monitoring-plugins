@@ -5,7 +5,7 @@
 * License: GPL
 * Copyright (c) 1999 Didi Rieder (adrieder@sbox.tu-graz.ac.at)
 * Copyright (c) 2000 Karl DeBisschop (kdebisschop@users.sourceforge.net)
-* Copyright (c) 1999-2011 Nagios Plugins Development Team
+* Copyright (c) 1999-2011 Monitoring Plugins Development Team
 * 
 * Description:
 * 

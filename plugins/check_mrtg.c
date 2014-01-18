@@ -3,7 +3,7 @@
 * monitoring check_mrtg plugin
 * 
 * License: GPL
-* Copyright (c) 1999-2007 Nagios Plugins Development Team
+* Copyright (c) 1999-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -315,7 +315,7 @@ print_help (void)
 {
 	print_revision (progname, NP_VERSION);
 
-	printf ("Copyright (c) 1999 Ethan Galstad <nagios@nagios.org>\n");
+	printf ("Copyright (c) 1999 Ethan Galstad <monitoring@monitoring.org>\n");
 	printf (COPYRIGHT, copyright, email);
 
 	printf ("%s\n", _("This plugin will check either the average or maximum value of one of the"));

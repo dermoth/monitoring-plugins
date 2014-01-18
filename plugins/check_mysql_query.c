@@ -3,7 +3,7 @@
 * monitoring check_mysql_query plugin
 * 
 * License: GPL
-* Copyright (c) 2006-2009 Nagios Plugins Development Team
+* Copyright (c) 2006-2009 Monitoring Plugins Development Team
 * Original code from check_mysql, copyright 1999 Didi Rieder
 * 
 * Description:

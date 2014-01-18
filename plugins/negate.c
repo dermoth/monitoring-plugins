@@ -1,9 +1,9 @@
 /*****************************************************************************
 * 
-* Nagios negate plugin
+* Monitoring negate plugin
 * 
 * License: GPL
-* Copyright (c) 2002-2008 Nagios Plugins Development Team
+* Copyright (c) 2002-2008 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -269,9 +269,9 @@ print_help (void)
 
 	printf ("\n");
 	printf ("%s\n", _("Examples:"));
-	printf (" %s\n", "negate /usr/local/nagios/libexec/check_ping -H host");
+	printf (" %s\n", "negate /usr/local/monitoring/libexec/check_ping -H host");
 	printf ("    %s\n", _("Run check_ping and invert result. Must use full path to plugin"));
-	printf (" %s\n", "negate -w OK -c UNKNOWN /usr/local/nagios/libexec/check_procs -a 'vi negate.c'");
+	printf (" %s\n", "negate -w OK -c UNKNOWN /usr/local/monitoring/libexec/check_procs -a 'vi negate.c'");
 	printf ("    %s\n", _("This will return OK instead of WARNING and UNKNOWN instead of CRITICAL"));
 	printf ("\n");
 	printf ("%s\n", _("Notes:"));

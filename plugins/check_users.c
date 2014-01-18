@@ -3,7 +3,7 @@
 * monitoring check_users plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2012 Nagios Plugins Development Team
+* Copyright (c) 2000-2012 Monitoring Plugins Development Team
 * 
 * Description:
 * 

@@ -4,7 +4,7 @@
 * 
 * License: GPL
 * Copyright (c) 2000 Karl DeBisschop (kdebisschop@users.sourceforge.net)
-* Copyright (c) 2000-2007 Nagios Plugins Development Team
+* Copyright (c) 2000-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 

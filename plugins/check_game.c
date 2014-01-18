@@ -3,7 +3,7 @@
 * monitoring check_game plugin
 * 
 * License: GPL
-* Copyright (c) 2002-2007 Nagios Plugins Development Team
+* Copyright (c) 2002-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 

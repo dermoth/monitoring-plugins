@@ -3,7 +3,7 @@
 * monitoring check_http plugin
 *
 * License: GPL
-* Copyright (c) 1999-2013 Nagios Plugins Development Team
+* Copyright (c) 1999-2013 Monitoring Plugins Development Team
 *
 * Description:
 *
@@ -157,7 +157,7 @@ main (int argc, char **argv)
   /* Set default URL. Must be malloced for subsequent realloc if --onredirect=follow */
   server_url = strdup(HTTP_URL);
   server_url_length = strlen(server_url);
-  xasprintf (&user_agent, "User-Agent: check_http/v%s (nagios-plugins %s)",
+  xasprintf (&user_agent, "User-Agent: check_http/v%s (monitoring-plugins %s)",
             NP_VERSION, VERSION);
 
   /* Parse extra opts if any */
@@ -1434,7 +1434,7 @@ print_help (void)
 {
   print_revision (progname, NP_VERSION);
 
-  printf ("Copyright (c) 1999 Ethan Galstad <nagios@nagios.org>\n");
+  printf ("Copyright (c) 1999 Ethan Galstad <monitoring@monitoring.org>\n");
   printf (COPYRIGHT, copyright, email);
 
   printf ("%s\n", _("This plugin tests the HTTP service on the specified host. It can test"));

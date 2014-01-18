@@ -3,7 +3,7 @@
 * monitoring check_smtp plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2007 Nagios Plugins Development Team
+* Copyright (c) 2000-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -778,7 +778,7 @@ print_help (void)
 
 	print_revision (progname, NP_VERSION);
 
-	printf ("Copyright (c) 1999-2001 Ethan Galstad <nagios@nagios.org>\n");
+	printf ("Copyright (c) 1999-2001 Ethan Galstad <monitoring@monitoring.org>\n");
 	printf (COPYRIGHT, copyright, email);
 
 	printf("%s\n", _("This plugin will attempt to open an SMTP connection with the host."));

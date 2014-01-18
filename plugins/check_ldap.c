@@ -3,7 +3,7 @@
 * monitoring check_ldap plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2008 Nagios Plugins Development Team
+* Copyright (c) 2000-2008 Monitoring Plugins Development Team
 * 
 * Description:
 * 

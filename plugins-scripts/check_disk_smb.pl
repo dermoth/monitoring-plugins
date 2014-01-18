@@ -3,7 +3,7 @@
 #
 # check_disk.pl <host> <share> <user> <pass> [warn] [critical] [port]
 #
-# Nagios host script to get the disk usage from a SMB share
+# Monitoring host script to get the disk usage from a SMB share
 #
 # Changes and Modifications
 # =========================

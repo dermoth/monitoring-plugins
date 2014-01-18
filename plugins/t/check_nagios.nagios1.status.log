@@ -1,4 +1,4 @@
-# Nagios 1.2 Status File
+# Monitoring 1.2 Status File
 [1133537544] PROGRAM;1133537484;21980;1;1133537534;0;1;1;1;1;0;1;1;1
 [1133537544] HOST;ADSL;PENDING;0;0;0;0;0;0;0;0;1;1;1;1;0;0.0;0;1;1;(Not enough data to determine host status yet)
 [1133537544] HOST;Internet;UP;1133537486;1132135282;0;1402203;0;0;0;0;1;1;1;1;0;0.00;0;1;1;(Host assumed to be up)

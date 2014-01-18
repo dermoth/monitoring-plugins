@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------------------
 # Copyright 1999 (c) Richard Mayhew
 #
-# Credits go to Ethan Galstad for coding Nagios
+# Credits go to Ethan Galstad for coding Monitoring
 #
 # If any changes are made to this script, please mail me a copy of the
 # changes :)
@@ -121,7 +121,7 @@ sub print_help ()
 	print_revision($PROGNAME,'@NP_VERSION@');
 	print "Copyright (c) 2000 Richard Mayhew/Karl DeBisschop
 
-Perl Check IRCD plugin for Nagios
+Perl Check IRCD plugin for Monitoring
 
 ";
 	print_usage();

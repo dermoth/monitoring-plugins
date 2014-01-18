@@ -1,6 +1,6 @@
 #!/usr/local/bin/perl -w
 #
-# check_rpc plugin for nagios
+# check_rpc plugin for monitoring
 #
 # usage:
 #    check_rpc host service

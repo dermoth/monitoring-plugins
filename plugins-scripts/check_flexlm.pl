@@ -9,7 +9,7 @@
 # Check and interpret the output of lmstat
 # and create returncodes and output.
 #
-# Contrary to the nagios concept, this script takes
+# Contrary to the monitoring concept, this script takes
 # a file, not a hostname as an argument and returns
 # the status of hosts and services described in that
 # file. Use these hosts.cfg entries as an example

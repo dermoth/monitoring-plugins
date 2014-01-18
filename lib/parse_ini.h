@@ -2,7 +2,7 @@
 #define _PARSE_INI_H_
 
 /*
- * parse_ini.h: routines for loading nagios-plugin defaults from ini
+ * parse_ini.h: routines for loading monitoring-plugin defaults from ini
  * configuration files.
  */
 
@@ -25,24 +25,24 @@ typedef struct np_arg_el {
 # define NP_DEFAULT_INI_FILENAME1 "plugins.ini"
 #endif /* NP_DEFAULT_INI_FILENAME1 */
 #ifndef NP_DEFAULT_INI_FILENAME2
-# define NP_DEFAULT_INI_FILENAME2 "nagios-plugins.ini"
+# define NP_DEFAULT_INI_FILENAME2 "monitoring-plugins.ini"
 #endif /* NP_DEFAULT_INI_FILENAME2 */
 
-/* Config paths ending in nagios (search for NP_DEFAULT_INI_FILENAME1) */
+/* Config paths ending in monitoring (search for NP_DEFAULT_INI_FILENAME1) */
 #ifndef NP_DEFAULT_INI_NAGIOS_PATH1
-# define NP_DEFAULT_INI_NAGIOS_PATH1 "/etc/nagios"
+# define NP_DEFAULT_INI_NAGIOS_PATH1 "/etc/monitoring"
 #endif /* NP_DEFAULT_INI_NAGIOS_PATH1 */
 #ifndef NP_DEFAULT_INI_NAGIOS_PATH2
-# define NP_DEFAULT_INI_NAGIOS_PATH2 "/usr/local/nagios/etc"
+# define NP_DEFAULT_INI_NAGIOS_PATH2 "/usr/local/monitoring/etc"
 #endif /* NP_DEFAULT_INI_NAGIOS_PATH2 */
 #ifndef NP_DEFAULT_INI_NAGIOS_PATH3
-# define NP_DEFAULT_INI_NAGIOS_PATH3 "/usr/local/etc/nagios"
+# define NP_DEFAULT_INI_NAGIOS_PATH3 "/usr/local/etc/monitoring"
 #endif /* NP_DEFAULT_INI_NAGIOS_PATH3 */
 #ifndef NP_DEFAULT_INI_NAGIOS_PATH4
-# define NP_DEFAULT_INI_NAGIOS_PATH4 "/etc/opt/nagios"
+# define NP_DEFAULT_INI_NAGIOS_PATH4 "/etc/opt/monitoring"
 #endif /* NP_DEFAULT_INI_NAGIOS_PATH4 */
 
-/* Config paths not ending in nagios (search for NP_DEFAULT_INI_FILENAME2) */
+/* Config paths not ending in monitoring (search for NP_DEFAULT_INI_FILENAME2) */
 #ifndef NP_DEFAULT_INI_PATH1
 # define NP_DEFAULT_INI_PATH1 "/etc"
 #endif /* NP_DEFAULT_INI_PATH1 */

@@ -3,7 +3,7 @@
 * monitoring urlize plugin
 * 
 * License: GPL
-* Copyright (c) 2000-2007 Nagios Plugins Development Team
+* Copyright (c) 2000-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
@@ -11,7 +11,7 @@
 * 
 * This plugin wraps the text output of another command (plugin) in HTML <A>
 * tags, thus displaying the child plugin's output as a clickable link in the
-* Nagios status screen.  This plugin returns the status of the invoked plugin.
+* Monitoring status screen.  This plugin returns the status of the invoked plugin.
 * 
 * 
 * This program is free software: you can redistribute it and/or modify

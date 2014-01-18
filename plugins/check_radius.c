@@ -3,7 +3,7 @@
 * monitoring check_radius plugin
 * 
 * License: GPL
-* Copyright (c) 1999-2008 Nagios Plugins Development Team
+* Copyright (c) 1999-2008 Monitoring Plugins Development Team
 * 
 * Description:
 * 

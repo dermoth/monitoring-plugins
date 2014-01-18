@@ -1,8 +1,8 @@
 #!/usr/bin/sh
 
-user="nagios"
+user="monitoring"
 uid=-1
-group="nagios"
+group="monitoring"
 gid=-1
 
 /usr/bin/getent group $group > /dev/null 2> /dev/null

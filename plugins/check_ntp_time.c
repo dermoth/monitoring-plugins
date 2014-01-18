@@ -4,7 +4,7 @@
 * 
 * License: GPL
 * Copyright (c) 2006 Sean Finney <seanius@seanius.net>
-* Copyright (c) 2006-2008 Nagios Plugins Development Team
+* Copyright (c) 2006-2008 Monitoring Plugins Development Team
 * 
 * Description:
 * 

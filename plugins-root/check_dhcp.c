@@ -1384,7 +1384,7 @@ void print_help(void){
 
 	print_revision(progname, NP_VERSION);
 
-	printf("Copyright (c) 2001-2004 Ethan Galstad (nagios@nagios.org)\n");
+	printf("Copyright (c) 2001-2004 Ethan Galstad (monitoring@monitoring.org)\n");
 	printf (COPYRIGHT, copyright, email);
 
 	printf("%s\n", _("This plugin tests the availability of DHCP servers on a network."));

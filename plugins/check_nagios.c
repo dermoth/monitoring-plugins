@@ -1,16 +1,16 @@
 /*****************************************************************************
 * 
-* Nagios check_nagios plugin
+* Monitoring check_nagios plugin
 * 
 * License: GPL
-* Copyright (c) 1999-2007 Nagios Plugins Development Team
+* Copyright (c) 1999-2007 Monitoring Plugins Development Team
 * 
 * Description:
 * 
 * This file contains the check_nagios plugin
 * 
-* This plugin checks the status of the Nagios process on the local machine.
-* The plugin will check to make sure the Nagios status log is no older than
+* This plugin checks the status of the Monitoring process on the local machine.
+* The plugin will check to make sure the Monitoring status log is no older than
 * the number of minutes specified by the expires option.
 * It also checks the process table for a process matching the command
 * argument.
@@ -121,11 +121,11 @@ main (int argc, char **argv)
 	if (verbose >= 2)
 		printf("command: %s\n", PS_COMMAND);
 
-	/* run the command to check for the Nagios process.. */
+	/* run the command to check for the Monitoring process.. */
 	if((result = np_runcmd(PS_COMMAND, &chld_out, &chld_err, 0)) != 0)
 		result = STATE_WARNING;
 
-	/* count the number of matching Nagios processes... */
+	/* count the number of matching Monitoring processes... */
 	for(i = 0; i < chld_out.lines; i++) {
 		cols = sscanf (chld_out.line[i], PS_FORMAT, PS_VARLIST);
 		/* Zombie processes do not give a procprog command */
@@ -165,11 +165,11 @@ main (int argc, char **argv)
 	alarm (0);
 
 	if (proc_entries == 0) {
-		die (STATE_CRITICAL, "NAGIOS %s: %s\n", _("CRITICAL"), _("Could not locate a running Nagios process!"));
+		die (STATE_CRITICAL, "NAGIOS %s: %s\n", _("CRITICAL"), _("Could not locate a running Monitoring process!"));
 	}
 
 	if (latest_entry_time == 0L) {
-		die (STATE_CRITICAL, "NAGIOS %s: %s\n", _("CRITICAL"), _("Cannot parse Nagios log file for valid time"));
+		die (STATE_CRITICAL, "NAGIOS %s: %s\n", _("CRITICAL"), _("Cannot parse Monitoring log file for valid time"));
 	}
 
 	time (&current_time);
@@ -286,8 +286,8 @@ print_help (void)
 
 	printf (_(COPYRIGHT), copyright, email);
 
-	printf ("%s\n", _("This plugin checks the status of the Nagios process on the local machine"));
-  printf ("%s\n", _("The plugin will check to make sure the Nagios status log is no older than"));
+	printf ("%s\n", _("This plugin checks the status of the Monitoring process on the local machine"));
+  printf ("%s\n", _("The plugin will check to make sure the Monitoring status log is no older than"));
   printf ("%s\n", _("the number of minutes specified by the expires option."));
   printf ("%s\n", _("It also checks the process table for a process matching the command argument."));
 
@@ -310,7 +310,7 @@ print_help (void)
 
   printf ("\n");
   printf ("%s\n", _("Examples:"));
-  printf (" %s\n", "check_nagios -t 20 -e 5 -F /usr/local/nagios/var/status.log -C /usr/local/nagios/bin/nagios");
+  printf (" %s\n", "check_nagios -t 20 -e 5 -F /usr/local/monitoring/var/status.log -C /usr/local/monitoring/bin/monitoring");
 
   printf (UT_SUPPORT);
 }

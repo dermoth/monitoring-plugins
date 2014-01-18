@@ -1,6 +1,6 @@
 #ifndef NP_UTILS_H
 #define NP_UTILS_H
-/* Header file for nagios plugins utils.c */
+/* Header file for monitoring plugins utils.c */
 
 /* This file should be included in all plugins */
 
@@ -131,7 +131,7 @@ char *fperfdata (const char *,
 {"warning",required_argument,0,'w'},\
 {"hostname",required_argument,0,'H'}
 
-#define COPYRIGHT "Copyright (c) %s Nagios Plugin Development Team\n\
+#define COPYRIGHT "Copyright (c) %s Monitoring Plugin Development Team\n\
 \t<%s>\n\n"
 
 #define UT_HLP_VRS _("\
@@ -198,7 +198,7 @@ regarding use of this software. To submit patches or suggest improvements,\n\
 send email to devel@monitoring-plugins.org\n\n")
 
 #define UT_NOWARRANTY _("\n\
-The nagios plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\n\
+The monitoring plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\n\
 copies of the plugins under the terms of the GNU General Public License.\n\
 For more information about these matters, see the file named COPYING.\n")
 

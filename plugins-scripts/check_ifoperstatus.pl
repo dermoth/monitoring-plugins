@@ -1,9 +1,9 @@
 #!/usr/local/bin/perl -w
 #
-# check_ifoperstatus.pl - nagios plugin 
+# check_ifoperstatus.pl - monitoring plugin 
 #
 # Copyright (C) 2000 Christoph Kron,
-# Modified 5/2002 to conform to updated Nagios Plugin Guidelines
+# Modified 5/2002 to conform to updated Monitoring Plugin Guidelines
 # Added support for named interfaces per Valdimir Ivaschenko (S. Ghosh)
 # Added SNMPv3 support (10/2003)
 #
@@ -22,7 +22,7 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 #
-# Report bugs to:  nagiosplug-help@lists.sourceforge.net
+# Report bugs to:  monitoringplug-help@lists.sourceforge.net
 #
 # 11.01.2000 Version 1.0
 #

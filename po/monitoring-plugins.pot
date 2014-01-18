@@ -110,7 +110,7 @@ msgstr ""
 #: plugins/check_by_ssh.c:369
 #, c-format
 msgid ""
-"%s: In passive mode, you must provide the host short name from the nagios "
+"%s: In passive mode, you must provide the host short name from the monitoring "
 "configs.\n"
 msgstr ""
 
@@ -154,11 +154,11 @@ msgid "identity of an authorized key [optional]"
 msgstr ""
 
 #: plugins/check_by_ssh.c:414
-msgid "external command file for nagios [optional]"
+msgid "external command file for monitoring [optional]"
 msgstr ""
 
 #: plugins/check_by_ssh.c:416
-msgid "list of nagios service names, separated by ':' [optional]"
+msgid "list of monitoring service names, separated by ':' [optional]"
 msgstr ""
 
 #: plugins/check_by_ssh.c:418
@@ -2028,7 +2028,7 @@ msgid "Found process: %s %s\n"
 msgstr ""
 
 #: plugins/check_nagios.c:168
-msgid "Could not locate a running Nagios process!"
+msgid "Could not locate a running Monitoring process!"
 msgstr ""
 
 #: plugins/check_nagios.c:172
@@ -3278,7 +3278,7 @@ msgstr ""
 
 #: plugins/check_pgsql.c:465
 msgid ""
-"Typically, the nagios user (unless the --logname option is used) should be"
+"Typically, the monitoring user (unless the --logname option is used) should be"
 msgstr ""
 
 #: plugins/check_pgsql.c:466
@@ -3479,7 +3479,7 @@ msgid ""
 msgstr ""
 
 #: plugins/check_ping.c:593
-msgid "the contrib area of the downloads section at http://www.nagios.org/"
+msgid "the contrib area of the downloads section at http://www.monitoring.org/"
 msgstr ""
 
 #: plugins/check_procs.c:159
@@ -5300,7 +5300,7 @@ msgstr ""
 #: plugins/utils.h:184
 msgid ""
 " --extra-opts=[section][@file]\n"
-"    Read options from an ini file. See http://nagiosplugins.org/extra-opts\n"
+"    Read options from an ini file. See http://monitoringplugins.org/extra-opts\n"
 "    for usage and examples.\n"
 msgstr ""
 
@@ -5324,7 +5324,7 @@ msgstr ""
 #: plugins/utils.h:202
 msgid ""
 "\n"
-"The nagios plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\n"
+"The monitoring plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\n"
 "copies of the plugins under the terms of the GNU General Public License.\n"
 "For more information about these matters, see the file named COPYING.\n"
 msgstr ""

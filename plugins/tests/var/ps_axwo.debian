@@ -69,13 +69,13 @@ S       33   845   832 14512 6476  0.0 apache2          /usr/sbin/apache2 -k sta
 S       33   846   832 14512 6476  0.0 apache2          /usr/sbin/apache2 -k start -DSSL
 Ss       7  4081     1  2464  884  0.0 lpd              /usr/sbin/lpd -s
 S       33 26484   832 14512 6476  0.0 apache2          /usr/sbin/apache2 -k start -DSSL
-Ss    1001 22324     1 20252 1612  0.1 nagios           ../../bin/nagios -d /usr/local/nagios/etc/nagios.cfg
+Ss    1001 22324     1 20252 1612  0.1 monitoring           ../../bin/monitoring -d /usr/local/monitoring/etc/monitoring.cfg
 Ss       0 23336  2319 14452 1756  0.0 sshd             sshd: tonvoon [priv]
 S     1000 23339 23336 14620 1840  0.0 sshd             sshd: tonvoon@pts/5
 Ss    1000 23340 23339  2996 1636  0.0 bash             -bash
 S        0 23367 23340  3020 1628  0.0 bash             bash
 S     1001 23370 23367  3064 1748  0.0 bash             bash
-Ss    1001 23783     1  3220  764  0.0 ndo2db           /usr/local/nagios/bin/ndo2db -c /usr/local/nagios/etc/ndo2db.cfg
+Ss    1001 23783     1  3220  764  0.0 ndo2db           /usr/local/monitoring/bin/ndo2db -c /usr/local/monitoring/etc/ndo2db.cfg
 Ss    1001 23784     1  6428 4948  0.0 import_ndologsd  import_ndologsd
 S+    1001  9803 18955  4132 1936  0.0 ssh              ssh altinity@cube02.lei.altinity
 S     1001 22505 22324 20256 1616  0.0 nagios           ../../bin/nagios -d /usr/local/nagios/etc/nagios.cfg

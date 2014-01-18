@@ -1,10 +1,10 @@
 #!/usr/local/bin/perl -w
 #
-# check_ifstatus.pl - nagios plugin 
+# check_ifstatus.pl - monitoring plugin 
 # 
 #
 # Copyright (C) 2000 Christoph Kron
-# Modified 5/2002 to conform to updated Nagios Plugin Guidelines (S. Ghosh)
+# Modified 5/2002 to conform to updated Monitoring Plugin Guidelines (S. Ghosh)
 #  Added -x option (4/2003)
 #  Added -u option (4/2003)
 #  Added -M option (10/2003)
@@ -25,7 +25,7 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 #
-# Report bugs to: ck@zet.net, nagiosplug-help@lists.sf.net
+# Report bugs to: ck@zet.net, monitoringplug-help@lists.sf.net
 # 
 # 11.01.2000 Version 1.0
 #

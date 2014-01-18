@@ -115,11 +115,11 @@ msgstr ""
 #: plugins/check_by_ssh.c:369
 #, c-format
 msgid ""
-"%s: In passive mode, you must provide the host short name from the nagios "
+"%s: In passive mode, you must provide the host short name from the monitoring "
 "configs.\n"
 msgstr ""
 "%s: En mode passif, vous devez fournir le nom court du hôte mentionné dans "
-"la configuration de nagios.\n"
+"la configuration de monitoring.\n"
 
 #: plugins/check_by_ssh.c:383
 #, c-format
@@ -161,12 +161,12 @@ msgid "identity of an authorized key [optional]"
 msgstr "Identité de la clé autorisée [optionnel]"
 
 #: plugins/check_by_ssh.c:414
-msgid "external command file for nagios [optional]"
-msgstr "commande externe pour nagios [optionnel]"
+msgid "external command file for monitoring [optional]"
+msgstr "commande externe pour monitoring [optionnel]"
 
 #: plugins/check_by_ssh.c:416
-msgid "list of nagios service names, separated by ':' [optional]"
-msgstr "liste des services nagios, séparés par ':' [optionnel] "
+msgid "list of monitoring service names, separated by ':' [optional]"
+msgstr "liste des services monitoring, séparés par ':' [optionnel] "
 
 #: plugins/check_by_ssh.c:418
 msgid "short name of host in the monitoring configuration [optional]"
@@ -2136,13 +2136,13 @@ msgid "Found process: %s %s\n"
 msgstr "Processus trouvé: %s %s\n"
 
 #: plugins/check_nagios.c:168
-msgid "Could not locate a running Nagios process!"
-msgstr "Impossible de trouver un processus Nagios actif!"
+msgid "Could not locate a running Monitoring process!"
+msgstr "Impossible de trouver un processus Monitoring actif!"
 
 #: plugins/check_nagios.c:172
 msgid "Cannot parse monitoring log file for valid time"
 msgstr ""
-"Impossible de trouver une date/heure valide dans le fichier de log de Nagios"
+"Impossible de trouver une date/heure valide dans le fichier de log de Monitoring"
 
 #: plugins/check_nagios.c:183 plugins/check_procs.c:295
 #, c-format
@@ -3423,7 +3423,7 @@ msgstr ""
 
 #: plugins/check_pgsql.c:465
 msgid ""
-"Typically, the nagios user (unless the --logname option is used) should be"
+"Typically, the monitoring user (unless the --logname option is used) should be"
 msgstr ""
 
 #: plugins/check_pgsql.c:466
@@ -3630,7 +3630,7 @@ msgid ""
 msgstr ""
 
 #: plugins/check_ping.c:593
-msgid "the contrib area of the downloads section at http://www.nagios.org/"
+msgid "the contrib area of the downloads section at http://www.monitoring.org/"
 msgstr ""
 
 #: plugins/check_procs.c:159
@@ -5533,7 +5533,7 @@ msgid ""
 "    Show details for command-line debugging (monitoring may truncate output)\n"
 msgstr ""
 " -v, --verbose\n"
-"    Affiche les informations de déboguage en ligne de commande (Nagios peut "
+"    Affiche les informations de déboguage en ligne de commande (Monitoring peut "
 "tronquer la sortie)\n"
 
 #: plugins/utils.h:167
@@ -5573,11 +5573,11 @@ msgstr ""
 #: plugins/utils.h:184
 msgid ""
 " --extra-opts=[section][@file]\n"
-"    Read options from an ini file. See http://nagiosplugins.org/extra-opts\n"
+"    Read options from an ini file. See http://monitoringplugins.org/extra-opts\n"
 "    for usage and examples.\n"
 msgstr ""
 " --extra-opts=[section][@file]\n"
-"    Lire les options d'un fichier ini. Voir http://nagiosplugins.org/extra-"
+"    Lire les options d'un fichier ini. Voir http://monitoringplugins.org/extra-"
 "opts\n"
 "    pour les instructions et examples.\n"
 
@@ -5612,12 +5612,12 @@ msgstr ""
 #: plugins/utils.h:202
 msgid ""
 "\n"
-"The nagios plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\n"
+"The monitoring plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\n"
 "copies of the plugins under the terms of the GNU General Public License.\n"
 "For more information about these matters, see the file named COPYING.\n"
 msgstr ""
 "\n"
-"Les plugins de Nagios ne portent AUCUNE GARANTIE. Vous pouvez redistribuer\n"
+"Les plugins de Monitoring ne portent AUCUNE GARANTIE. Vous pouvez redistribuer\n"
 "des copies des plugins selon les termes de la GNU General Public License.\n"
 "Pour de plus ample informations, voir le fichier COPYING.\n"
 
@@ -6053,8 +6053,8 @@ msgstr ""
 #~ msgstr "Utilisation: "
 
 #~ msgid ""
-#~ " See: http://nagiosplugins.org/extra-opts for --extra-opts usage and "
+#~ " See: http://monitoringplugins.org/extra-opts for --extra-opts usage and "
 #~ "examples.\n"
 #~ msgstr ""
-#~ " Voir: http://nagiosplugins.org/extra-opts pour le format et examples de "
+#~ " Voir: http://monitoringplugins.org/extra-opts pour le format et examples de "
 #~ "--extra-opts.\n"
