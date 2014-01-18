@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_dbi plugin
+* monitoring check_dbi plugin
 * 
 * License: GPL
 * Copyright (c) 2011 Nagios Plugins Development Team
@@ -31,7 +31,7 @@
 
 const char *progname = "check_dbi";
 const char *copyright = "2011";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "utils.h"

@@ -44,7 +44,7 @@ my $exitcode = $ERRORS{'OK'};
 
 process_arguments();
 
-# Just in case of problems, let's not hang Nagios
+# Just in case of problems, let's not hang the monitoring system
 $SIG{'ALRM'} = sub {
      print ("SQL UNKNOWN: ERROR connection $server (alarm timeout)\n");
      exit $ERRORS{"UNKNOWN"};

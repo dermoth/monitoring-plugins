@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_pgsql plugin
+* monitoring check_pgsql plugin
 * 
 * License: GPL
 * Copyright (c) 1999-2011 Nagios Plugins Development Team
@@ -30,7 +30,7 @@
 
 const char *progname = "check_pgsql";
 const char *copyright = "1999-2011";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "utils.h"

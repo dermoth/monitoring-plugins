@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_ntp_peer plugin
+* monitoring check_ntp_peer plugin
 * 
 * License: GPL
 * Copyright (c) 2006 Sean Finney <seanius@seanius.net>
@@ -37,7 +37,7 @@
 
 const char *progname = "check_ntp_peer";
 const char *copyright = "2006-2008";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "netutils.h"

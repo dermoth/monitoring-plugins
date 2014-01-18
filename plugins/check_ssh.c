@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_ssh plugin
+* monitoring check_ssh plugin
 * 
 * License: GPL
 * Copyright (c) 2000-2007 Nagios Plugins Development Team
@@ -30,7 +30,7 @@
 
 const char *progname = "check_ssh";
 const char *copyright = "2000-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "netutils.h"

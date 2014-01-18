@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_disk plugin
+* monitoring check_disk plugin
 * 
 * License: GPL
 * Copyright (c) 2000 Karl DeBisschop (kdebisschop@users.sourceforge.net)
@@ -29,7 +29,7 @@
 
 const char *progname = "check_swap";
 const char *copyright = "2000-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "popen.h"

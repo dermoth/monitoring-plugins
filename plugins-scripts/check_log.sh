@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Log file pattern detector plugin for Nagios
+# Log file pattern detector plugin for monitoring
 # Written by Ethan Galstad (nagios@nagios.org)
 # Last Modified: 07-31-1999
 #
@@ -85,7 +85,7 @@ print_help() {
     echo ""
     print_usage
     echo ""
-    echo "Log file pattern detector plugin for Nagios"
+    echo "Log file pattern detector plugin for monitoring"
     echo ""
     support
 }

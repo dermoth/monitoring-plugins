@@ -72,7 +72,7 @@ unless (defined $opt_F) {
 	print_usage();
 	exit $ERRORS{'UNKNOWN'};
 }
-# Just in case of problems, let's not hang Nagios
+# Just in case of problems, let's not hang the monitoring system
 $SIG{'ALRM'} = sub {
 	print "Timeout: No Answer from Client\n";
 	exit $ERRORS{'UNKNOWN'};

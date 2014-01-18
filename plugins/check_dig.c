@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_dig plugin
+* monitoring check_dig plugin
 * 
 * License: GPL
 * Copyright (c) 2002-2008 Nagios Plugins Development Team
@@ -34,7 +34,7 @@
 
 const char *progname = "check_dig";
 const char *copyright = "2002-2008";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "netutils.h"

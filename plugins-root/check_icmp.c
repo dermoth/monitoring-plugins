@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_icmp plugin
+* monitoring check_icmp plugin
 * 
 * License: GPL
 * Copyright (c) 2005-2008 Nagios Plugins Development Team
@@ -40,7 +40,7 @@
 /* char *progname = "check_icmp"; */
 char *progname;
 const char *copyright = "2005-2008";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 /** nagios plugins basic includes */
 #include "common.h"

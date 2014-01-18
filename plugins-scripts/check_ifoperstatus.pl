@@ -97,7 +97,7 @@ my %session_opts;
 $status = process_arguments();
 
 
-# Just in case of problems, let's not hang Nagios
+# Just in case of problems, let's not hang the monitoring system
 $SIG{'ALRM'} = sub {
 	print ("ERROR: No snmp response from $hostname (alarm)\n");
 	exit $ERRORS{"UNKNOWN"};
@@ -288,7 +288,7 @@ sub print_usage() {
 sub print_help() {
 	print_revision($PROGNAME, '@NP_VERSION@');
 	print_usage();
-	printf "check_ifoperstatus plugin for Nagios monitors operational \n";
+	printf "check_ifoperstatus plugin for monitoring operational \n";
 	printf "status of a particular network interface on the target host\n";
 	printf "\nUsage:\n";
 	printf "   -H (--hostname)   Hostname to query - (required)\n";

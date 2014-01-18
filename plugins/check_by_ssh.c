@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_by_ssh plugin
+* monitoring check_by_ssh plugin
 * 
 * License: GPL
 * Copyright (c) 2000-2008 Nagios Plugins Development Team
@@ -28,7 +28,7 @@
 
 const char *progname = "check_by_ssh";
 const char *copyright = "2000-2008";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "utils.h"
@@ -246,7 +246,7 @@ process_arguments (int argc, char **argv)
 			}
 			service[services - 1] = p1;
 			break;
-		case 'n':									/* short name of host in nagios configuration */
+		case 'n':									/* short name of host in the monitoring configuration */
 			host_shortname = optarg;
 			break;
 
@@ -420,7 +420,7 @@ print_help (void)
   printf (" %s\n","-s, --services=LIST");
   printf ("    %s\n", _("list of nagios service names, separated by ':' [optional]"));
   printf (" %s\n","-n, --name=NAME");
-  printf ("    %s\n", _("short name of host in nagios configuration [optional]"));
+  printf ("    %s\n", _("short name of host in the monitoring configuration [optional]"));
   printf (" %s\n","-o, --ssh-option=OPTION");
   printf ("    %s\n", _("Call ssh with '-o OPTION' (may be used multiple times) [optional]"));
   printf (" %s\n","-F, --configfile");

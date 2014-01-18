@@ -1,6 +1,6 @@
 /*****************************************************************************
 * 
-* Nagios check_ups plugin
+* monitoring check_ups plugin
 * 
 * License: GPL
 * Copyright (c) 2000 Tom Shields
@@ -34,7 +34,7 @@
 
 const char *progname = "check_ups";
 const char *copyright = "2000-2007";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "netutils.h"

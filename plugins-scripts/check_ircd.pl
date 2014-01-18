@@ -205,7 +205,7 @@ MAIN:
 
 	if ($opt_t && $opt_t =~ /^([0-9]+)$/) { $TIMEOUT = $1; }
 
-	# Just in case of problems, let's not hang Nagios
+	# Just in case of problems, let's not hang the monitoring system
 	$SIG{'ALRM'} = sub {
 		print "Somthing is Taking a Long Time, Increase Your TIMEOUT (Currently Set At $TIMEOUT Seconds)\n";
 		exit $ERRORS{"UNKNOWN"};

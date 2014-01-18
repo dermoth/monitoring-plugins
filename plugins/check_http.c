@@ -1,6 +1,6 @@
 /*****************************************************************************
 *
-* Nagios check_http plugin
+* monitoring check_http plugin
 *
 * License: GPL
 * Copyright (c) 1999-2013 Nagios Plugins Development Team
@@ -35,7 +35,7 @@
 
 const char *progname = "check_http";
 const char *copyright = "1999-2013";
-const char *email = "nagiosplug-devel@lists.sourceforge.net";
+const char *email = "devel@monitoring-plugins.org";
 
 #include "common.h"
 #include "netutils.h"
